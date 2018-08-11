@@ -25,10 +25,10 @@ void have_fun()
     cudaMalloc((void **)&C, M * M * sizeof(double));
 
 
-    cudaMemcpy(A, host_A, M * N * sizeof(double), cudaMemcpyHostToDevice);
-    cudaMemcpy(B, host_B, M * N * sizeof(double), cudaMemcpyHostToDevice);
-    cudaMemcpy(host_C, C, M * M * sizeof(double), cudaMemcpyDeviceToHost);
-    
+    // cudaMemcpy(A, host_A, M * N * sizeof(double), cudaMemcpyHostToDevice);
+    // cudaMemcpy(B, host_B, M * N * sizeof(double), cudaMemcpyHostToDevice);
+    // cudaMemcpy(host_C, C, M * M * sizeof(double), cudaMemcpyDeviceToHost);
+
 
     have_fun();
     --cnt;
@@ -47,7 +47,7 @@ int main()
         ++i;
         have_fun();
     }
-        
+
 
     return 0;
 }
