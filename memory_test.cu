@@ -13,7 +13,7 @@
 int cnt;
 void have_fun()
 {
-    // printf("Number of function calls: %d\n", cnt);
+    printf("Number of function calls: %d\n", cnt);
     ++cnt;
     double *A, *B, *C;
     cudaMalloc((void **)&A, M * N * sizeof(double));
