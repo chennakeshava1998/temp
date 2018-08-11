@@ -17,7 +17,7 @@ void have_fun()
     if(cnt < 130080)
     return;
 
-    printf("Number of function calls: %d\n", cnt);
+    // printf("Number of function calls: %d\n", cnt);
     ++cnt;
     double *A, *B, *C;
     cudaMalloc((void **)&A, M * N * sizeof(double));
@@ -40,8 +40,14 @@ void have_fun()
 int main()
 {
     cnt = 0;
+    int i = 0;
     while(1)
+    {
+        printf("i = %d\n", i);
+        ++i;
         have_fun();
+    }
+        
 
     return 0;
 }
