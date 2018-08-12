@@ -31,22 +31,17 @@ void have_fun()
 
 
     have_fun();
-    --cnt;
-    cudaFree(A);
-    cudaFree(B);
-    cudaFree(C);
+//     --cnt;
+//     cudaFree(A);
+//     cudaFree(B);
+//     cudaFree(C);
 }
 
 int main()
 {
     cnt = 0;
-    int i = 0;
-    while(1)
-    {
-        printf("i = %d\n", i);
-        ++i;
-        have_fun();
-    }
+//     int i = 0;
+    have_fun();
 
 
     return 0;
